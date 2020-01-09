@@ -68,26 +68,19 @@ To edit the settings use the command `Open Settings JSON` in the Command Palette
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
 
-    "eslint.autoFixOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
     "eslint.validate": [
-        {
-            "language": "vue",
-            "autoFix": true
-        },
-        {
-            "language": "html",
-            "autoFix": true
-        },
-        {
-            "language": "javascript",
-            "autoFix": true
-        }
+        "vue",
+        "html",
+        "javascript"
     ],
 
-  "prettier.eslintIntegration":true,
+    "prettier.eslintIntegration": true,
 
-  "vetur.format.defaultFormatter.html": "prettyhtml",
-  "vetur.format.defaultFormatter.js": "prettier-eslint"
+    "vetur.format.defaultFormatter.html": "prettyhtml",
+    "vetur.format.defaultFormatter.js": "prettier-eslint"
 }
 ```
 
